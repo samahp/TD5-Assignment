@@ -1,0 +1,175 @@
+{
+	"id": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+	"name": "Users Test",
+	"description": "Tests that the Users urls work properly",
+	"order": [
+		"cea37b06-b96d-9cae-19c7-a89d688da8f9",
+		"9617fa17-e92c-7db5-c1ec-fdfd860ffa52",
+		"cfd31db4-3485-f752-bfae-34ce39402807",
+		"a7f96891-c284-c97c-b0cb-b0a808d3ad44",
+		"31939741-d191-dbea-b433-9c6a631f3c5a"
+	],
+	"folders": [],
+	"timestamp": 1445195529956,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "31939741-d191-dbea-b433-9c6a631f3c5a",
+			"headers": "",
+			"url": "localhost:8080/api/users/{id}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1445199087093,
+			"name": "Delete a User",
+			"description": "Deletes the user from the system.\nGrab the id from the POST create user call.",
+			"collectionId": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+			"responses": []
+		},
+		{
+			"id": "9617fa17-e92c-7db5-c1ec-fdfd860ffa52",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:8080/api/users",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+			"data": [
+				{
+					"key": "email",
+					"value": "dummytest@gmail.biz",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Dummy Test",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Get all Users",
+			"description": "Gets all users in the system.",
+			"descriptionFormat": "html",
+			"time": 1445198724652,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a7f96891-c284-c97c-b0cb-b0a808d3ad44",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:8080/api/users",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+			"data": [
+				{
+					"key": "email",
+					"value": "dummytest@gmail.biz",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Dummy Test",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Update a User",
+			"description": "Changes Dummy Test email.\nFill in the id in the body and url from the POST create user call.",
+			"descriptionFormat": "html",
+			"time": 1445195629814,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cea37b06-b96d-9cae-19c7-a89d688da8f9",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:8080/api/users",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+			"data": [
+				{
+					"key": "email",
+					"value": "dummytest@gmail.biz",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Dummy Test",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Create a User",
+			"description": "Create a user named Dummy Test",
+			"descriptionFormat": "html",
+			"time": 1445195629814,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cfd31db4-3485-f752-bfae-34ce39402807",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:8080/api/users/{id}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "email",
+					"value": "dummytest@gmail.blah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Dummy Test",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1445198999120,
+			"name": "Get specific User",
+			"description": "Gets a specific user in the system. \nLook up the id from the POST for creating a user.",
+			"collectionId": "16205d28-fd46-11b4-1906-6973c84cf5aa",
+			"responses": []
+		}
+	]
+}

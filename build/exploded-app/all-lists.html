@@ -1,0 +1,9 @@
+<div class="starter-template">
+    <h4>All Lists</h4>
+    <a href="#" ng-click="createList()">Create new List</a>
+    <div class="list-group" ng-repeat="list in lists" style="width: 20% !important;">
+        <a class="list-group-item" ng-href="#/users/{{list.id}}">
+            <p ng-bind="'List Number ' + list.id"></p>
+        </a>
+    </div>
+</div>
